@@ -1,0 +1,19 @@
+============================================================
+VULNERABILITY SCAN REPORT
+============================================================
+Target:    scanme.nmap.org
+Scan Time: 2026-07-04T07:11:06
+Open Ports Found: 2
+
+-- Open Ports --
+  Port 22     SSH          Banner: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+  Port 80     HTTP         Banner: (no banner)
+
+-- Findings --
+  1. Missing security headers on http://scanme.nmap.org:80/: Strict-Transport-Security, Content-Security-Policy, X-Content-Type-Options, X-Frame-Options
+  2. Server header discloses software: 'Apache/2.4.7 (Ubuntu)'
+
+-- Summary --
+  High-risk exposed services: 0
+  Outdated software banners:  0
+  Other findings:             2
